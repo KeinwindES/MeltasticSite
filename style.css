@@ -7,13 +7,15 @@ h1 {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Doganicapixel';
+    text-align: center;
 }
 
 p {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: larger;
+    font-size: 20px;
     font-family: 'Doganicapixel';
+    line-height: 1.2;
 }
 
 a {
@@ -45,4 +47,21 @@ nav {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     word-spacing: 15px;
     font-family: 'Doganicapixel';
+}
+
+footer {
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Doganicapixel';
+    /* fixed at the bottom */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
