@@ -9,8 +9,101 @@
 <body>
     <a href="../Heim.html">Zurück</a>
     <h1>Taschenrechner</h1>
-    
+    <!-- input field -->
+    <input type="text" id="input">
+    <!-- 4x5 button -->
+    <table>
+        <tr>
+            <td><button class="button" id="button1">1</button></td>
+            <td><button class="button" id="button2">2</button></td>
+            <td><button class="button" id="button3">3</button></td>
+            <td><button class="button" id="button14">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="button" id="button4">4</button></td>
+            <td><button class="button" id="button5">5</button></td>
+            <td><button class="button" id="button6">6</button></td>
+            <td><button class="button" id="button13">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="button" id="button7">7</button></td>
+            <td><button class="button" id="button8">8</button></td>
+            <td><button class="button" id="button9">9</button></td>
+            <td><button class="button" id="button15">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="button" id="button10">C</button></td>
+            <td><button class="button" id="button11">0</button></td>
+            <td><button class="button" id="button12">=</button></td>
+            <td><button class="button" id="button16">/</button></td>
+        </tr>
+    </table>
+    <script>
+        // Get the input field and buttons
+        let input = document.getElementById('input');
+        let buttons = document.querySelectorAll('.button');
+
+        // Add event listeners to the buttons
+        buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            let value = button.innerHTML;
+            if (value === '=') {
+            // Calculate the result
+            let result = eval(input.value);
+            input.value = result;
+            } else if (value === 'C') {
+            // Clear the input field
+            input.value = '';
+            } else {
+            // Append the button value to the input field
+            input.value += value;
+            }
+        });
+        });
+    </script>
 </body>
+
+
+<style>
+    table {
+        margin: 0 auto;
+    }
+    button {
+        color: #000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        border: 2px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Doganicapixel';
+        width: 200px;
+        height: 200px;
+        font-size: 64px;
+        /* align buttons center */
+        display: block;
+        margin: 0 auto;
+        }
+
+        input {
+        color: #000;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        border: 2px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Doganicapixel';
+        width: 600px;
+        height: 50px;
+        font-size: 52px;
+        /* align buttons center */
+        display: block;
+        margin: 0 auto;
+        }
+</style>
 <footer>
     <p>&copy; 2024 Meltastic</p>
 </footer>

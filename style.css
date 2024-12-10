@@ -65,3 +65,15 @@ footer {
     left: 0;
     width: 100%;
 }
+
+input {
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Doganicapixel';
+}   
