@@ -11,7 +11,14 @@ h1 {
   font-size: 2rem; /* Original size restored */
   margin: 0.5em 0;
 }
-
+h2 {
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Doganicapixel';
+  text-align: center;
+  font-size: 1.5rem; /* Original size restored */
+  margin: 0.5em 0;
+}
 p {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -76,10 +83,14 @@ footer {
 }
 
 li {
-  text-align: center;
+  text-align: left;
   line-height: 1.5;
   font-size: 1.25rem; /* Original size restored */
-}
+  font-family: 'Doganicapixel';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  color: #000;
+  }
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
