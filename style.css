@@ -1,71 +1,103 @@
 @font-face {
-  font-family: 'Doganicapixel';
-  src: url('Font/dogicapixel.ttf') format('truetype');
-}
-
-h1 {
+    font-family: 'Doganicapixel';
+    src: url('Font/dogicapixel.ttf') format('truetype');
+  }
+  
+  h1 {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Doganicapixel';
     text-align: center;
-}
-
-p {
+    font-size: 2rem; /* Original size restored */
+    margin: 0.5em 0;
+  }
+  
+  p {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    font-size: 1.25rem; /* Original size restored */
     font-family: 'Doganicapixel';
-    line-height: 1.2;
-}
-
-a {
+    line-height: 1.5;
+    margin: 1em;
+  }
+  
+  a {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Doganicapixel';
-}
-
-button {
-    color: #000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f0f0f0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Doganicapixel';
-}
-
-nav {
+    text-decoration: none;
+  }
+  
+  button {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border: 2px solid #000;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.5em 1em;
+    margin: 0.5em;
     background-color: #f0f0f0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    word-spacing: 15px;
     font-family: 'Doganicapixel';
-}
-
-footer {
+    font-size: 1.25rem; /* Original size restored */
+  }
+  
+  nav {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border: 2px solid #000;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    word-spacing: 1em;
+    font-family: 'Doganicapixel';
+    text-align: center;
+    font-size: 1rem; /* Original size restored */
+  }
+  
+  footer {
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0.5em 0;
     background-color: #f0f0f0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Doganicapixel';
-    /* fixed at the bottom */
+    font-size: 1rem; /* Original size restored */
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-}
-li {
     text-align: center;
-    line-height: 1.2;
-}
+  }
+  
+  li {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.25rem; /* Original size restored */
+  }
+  
+  /* Mobile-friendly adjustments */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8rem; /* Maintain near original size */
+    }
+  
+    p, li {
+      font-size: 1.25rem; /* Keep original size */
+    }
+  
+    button {
+      font-size: 1.25rem; /* Keep original size */
+      padding: 0.4em 0.8em;
+    }
+  
+    nav, footer {
+      font-size: 1rem; /* Keep original size */
+      padding: 0.4em;
+    }
+  }
+  
