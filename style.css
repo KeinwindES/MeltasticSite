@@ -3,24 +3,34 @@
   src: url('Font/dogicapixel.ttf') format('truetype');
 }
 
+/* Body styling to center everything */
+body {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  flex-direction: column; /* Ensures elements stack vertically */
+  min-height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #fff; /* Optional background color */
+}
+
 h1 {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Doganicapixel';
-  text-align: center;
-  font-size: 2rem; /* Original size restored */
+  font-size: 2rem;
   margin: 0.5em 0;
   padding: 10px;
 }
+
 h2 {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Doganicapixel';
-  text-align: center;
-  font-size: 1.5rem; /* Original size restored */
-  margin: 0.5em 0;
+  font-size: 1.5rem;
   padding: 10px;
 }
+
 h6 {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -31,12 +41,10 @@ h6 {
 p {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.25rem; /* Original size restored */
+  font-size: 1.25rem;
   font-family: 'Doganicapixel';
   line-height: 1.5;
-  margin: 1em;
-  padding: 10px;
-  text-align: center;
+  padding: 10px; /* Reduced padding for better layout */
 }
 
 a {
@@ -56,7 +64,7 @@ button {
   background-color: #f0f0f0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Doganicapixel';
-  font-size: 1.25rem; /* Original size restored */
+  font-size: 1.25rem;
 }
 
 nav {
@@ -70,73 +78,64 @@ nav {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-spacing: 1em;
   font-family: 'Doganicapixel';
-  text-align: center;
-  font-size: 1rem; /* Original size restored */
+  font-size: 1rem;
 }
 
 footer {
-  color: #333; /* Soft text color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Light text shadow */
-  border: 1px solid #ccc; /* Light border */
-  border-radius: 5px;
-  padding: 0.25em 0.75em; /* Small padding */
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 0.25em 0.75em;
   margin: 0;
-  background-color: #fafafa; /* Light background */
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  
-  /* Fix the footer at the bottom */
   position: fixed;
-  left: 10px; /* Small gap from the left */
-  bottom: 10px; /* Small gap from the bottom */
+  left: 10px;
+  bottom: 10px;
 }
 
 li {
-  text-align: center;
   line-height: 1.5;
-  font-size: 1.25rem; /* Original size restored */
+  font-size: 1.25rem;
   font-family: 'Doganicapixel';
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin: 1em;
   color: #000;
-  }
+}
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.8rem; /* Adjust size for smaller screens */
+    font-size: 1.8rem;
   }
 
   p, li {
-    font-size: 1.1rem; /* Slightly smaller font size for readability */
+    font-size: 1.1rem;
   }
 
   button {
-    font-size: 1.1rem; /* Keep the button text readable */
-    padding: 0.4em 0.8em; /* Adjust button padding */
+    font-size: 1.1rem;
+    padding: 0.4em 0.8em;
   }
 
   nav, footer {
-    font-size: 1rem; /* Keep the font size in the navigation and footer */
+    font-size: 1rem;
     padding: 0.4em;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 1.5rem; /* Further reduce header size on small screens */
+    font-size: 1.5rem;
   }
 
   p, li {
-    font-size: 1rem; /* Reduce font size for better fitting on small screens */
+    font-size: 1rem;
   }
 
   button {
-    font-size: 1rem; /* Further reduce button font size */
-    padding: 0.3em 0.6em; /* Adjust button padding for small screens */
+    font-size: 1rem;
+    padding: 0.3em 0.6em;
   }
 
   nav, footer {
-    font-size: 0.9rem; /* Adjust font size in nav/footer */
+    font-size: 0.9rem;
     padding: 0.3em;
   }
 }
