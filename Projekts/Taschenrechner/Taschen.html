@@ -9,7 +9,7 @@
 <body>
     <a href="../Heim.html">Zurück</a>
     <h1>Taschen</h1>
-    <input type="text">
+    <input type="text" id="display" disabled>
     <div>
         <button>7</button>
         <button>8</button>
@@ -34,7 +34,56 @@
         <button>C</button>
     </div>
     <script>
+        // JavaScript to handle button clicks
+        const display = document.getElementById('display');
+        let currentInput = '';
+        let operator = null;
+        let firstOperand = null;
 
+        // Function to handle button click
+        document.body.addEventListener('click', (event) => {
+            if (event.target.tagName !== 'BUTTON') return;
+
+            const value = event.target.textContent;
+
+            if (!isNaN(value)) {
+                // Number buttons
+                currentInput += value;
+                display.value = currentInput;
+            } else if (value === '+' || value === '-') {
+                // Operator buttons
+                if (currentInput) {
+                    firstOperand = parseFloat(currentInput);
+                    currentInput = '';
+                    operator = value;
+                }
+            } else if (value === '=') {
+                // Equals button
+                if (firstOperand !== null && operator && currentInput) {
+                    const secondOperand = parseFloat(currentInput);
+                    if (operator === '+') {
+                        display.value = firstOperand + secondOperand;
+                    } else if (operator === '-') {
+                        display.value = firstOperand - secondOperand;
+                    }
+                    firstOperand = null;
+                    currentInput = '';
+                    operator = null;
+                }
+            } else if (value === 'C') {
+                // Clear button
+                currentInput = '';
+                operator = null;
+                firstOperand = null;
+                display.value = '';
+            } else if (value === ',') {
+                // Decimal button
+                if (!currentInput.includes('.')) {
+                    currentInput += '.';
+                    display.value = currentInput;
+                }
+            }
+        });
     </script>
 </body>
 </html>
