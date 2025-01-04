@@ -1,91 +1,78 @@
 @font-face {
   font-family: 'Doganicapixel';
   src: url('Font/dogicapixel.ttf') format('truetype');
+  font-display: swap; /* Ensures text visibility during font loading */
 }
 
-/* Body styling to center everything */
+:root {
+  --main-color: #000;
+  --background-color: #fff;
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  --footer-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  flex-direction: column; /* Ensures elements stack vertically */
-  min-height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
-  background-color: #fff; /* Optional background color */
-  font-family: 'Doganicapixel';
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: 'Doganicapixel', Arial, sans-serif; /* Added fallback fonts */
+}
+
+h1, h2, h6, p, a, button, nav, li, input {
+  color: var(--main-color);
+  text-shadow: var(--text-shadow);
+  font-family: 'Doganicapixel', Arial, sans-serif;
 }
 
 h1 {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
   font-size: 2rem;
   margin: 0.5em 0;
   padding: 10px;
 }
 
 h2 {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
   font-size: 1.5rem;
   padding: 10px;
 }
 
 h6 {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
   font-size: 14px;
   margin: auto;
 }
 
 p {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 1.25rem;
-  font-family: 'Doganicapixel';
   line-height: 1.5;
-  padding: 10px; /* Reduced padding for better layout */
+  padding: 10px;
 }
 
 a {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
   text-decoration: none;
 }
 
-button {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border: 2px solid #000;
+button, nav {
+  border: 2px solid var(--main-color);
   border-radius: 5px;
   padding: 0.5em 1em;
   margin: 0.5em;
   background-color: #f0f0f0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
+  box-shadow: var(--text-shadow);
   font-size: 1.25rem;
-}
-
-nav {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 0.5em;
-  margin: 0.5em;
-  background-color: #f0f0f0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  word-spacing: 1em;
-  font-family: 'Doganicapixel';
-  font-size: 1rem;
 }
 
 footer {
   color: #333;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: var(--footer-shadow);
   padding: 0.25em 0.75em;
   margin: 0;
   position: fixed;
@@ -93,20 +80,9 @@ footer {
   bottom: 10px;
 }
 
-li {
-  line-height: 1.5;
+li, input {
   font-size: 1.25rem;
-  font-family: 'Doganicapixel';
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #000;
-}
-
-input {
   line-height: 1.5;
-  font-size: 1.25rem;
-  font-family: 'Doganicapixel';
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #000;
   border-radius: 5px;
 }
 
@@ -116,16 +92,20 @@ input {
     font-size: 1.8rem;
   }
 
+  h2 {
+    font-size: 1.4rem;
+  }
+
   p, li {
     font-size: 1.1rem;
   }
 
-  button {
+  button, nav {
     font-size: 1.1rem;
     padding: 0.4em 0.8em;
   }
 
-  nav, footer {
+  footer {
     font-size: 1rem;
     padding: 0.4em;
   }
@@ -136,16 +116,20 @@ input {
     font-size: 1.5rem;
   }
 
+  h2 {
+    font-size: 1.2rem;
+  }
+
   p, li {
     font-size: 1rem;
   }
 
-  button {
+  button, nav {
     font-size: 1rem;
     padding: 0.3em 0.6em;
   }
 
-  nav, footer {
+  footer {
     font-size: 0.9rem;
     padding: 0.3em;
   }
