@@ -1,10 +1,12 @@
 /* Font import */
 @font-face {
   font-family: 'Doganicapixel';
-  src: url('fonts/Doganicapixel.ttf') format('truetype');
+  src: url('Font/dogicapixel.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+
 /* Body styling to center everything */
 body {
   display: flex;
