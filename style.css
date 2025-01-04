@@ -36,6 +36,7 @@ p {
   line-height: 1.5;
   margin: 1em;
   padding: 10px;
+  text-align: center;
 }
 
 a {
@@ -82,12 +83,6 @@ footer {
   margin: 0;
   background-color: #fafafa; /* Light background */
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  font-family: 'Arial', sans-serif; /* Neutral font */
-  font-size: 0.75rem; /* Small font size */
-  width: auto; /* Auto width */
-  height: auto; /* Auto height */
-  box-sizing: border-box;
-  text-align: center;
   
   /* Fix the footer at the bottom */
   position: fixed;
@@ -96,7 +91,7 @@ footer {
 }
 
 li {
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
   font-size: 1.25rem; /* Original size restored */
   font-family: 'Doganicapixel';
