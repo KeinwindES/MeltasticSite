@@ -1,7 +1,7 @@
 /* Font import */
 @font-face {
   font-family: 'Doganicapixel';
-  src: url('Font/dogicapixel.ttf') format('truetype');
+  src: url('dogicapixel.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
