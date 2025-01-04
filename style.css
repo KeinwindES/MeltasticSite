@@ -36,6 +36,7 @@ h6 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Doganicapixel';
   font-size: 14px;
+  margin: auto;
 }
 
 p {
@@ -97,6 +98,15 @@ li {
   font-family: 'Doganicapixel';
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #000;
+}
+
+input {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-family: 'Doganicapixel';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #000;
+  
 }
 
 /* Mobile-friendly adjustments */
