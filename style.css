@@ -72,27 +72,23 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-family: 'Doganicapixel';
   text-decoration: none;
+  font-size: 1.5rem; /* Larger for PC */
+  transition: color 0.3s ease;
 }
 
 /* list on hover */
-li:hover {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
-  text-decoration: line-through;
-  cursor: pointer;
-}
 button {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border: 2px solid #000;
   border-radius: 5px;
-  padding: 0.6em 1.2em; /* Adjusted for better layout */
+  padding: 0.6em; /* Adjusted for better spacing */
   margin: 0.5em;
   background-color: #f0f0f0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  word-spacing: 1em;
   font-family: 'Doganicapixel';
-  font-size: 1.5rem; /* Larger for PC */
+  font-size: 1.25rem; /* Larger for PC */
 }
 
 nav {
