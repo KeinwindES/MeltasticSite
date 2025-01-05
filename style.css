@@ -74,6 +74,14 @@ a {
   text-decoration: none;
 }
 
+/* list on hover */
+li:hover {
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Doganicapixel';
+  text-decoration: line-through;
+  cursor: pointer;
+}
 button {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
