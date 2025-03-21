@@ -1,10 +1,4 @@
-/* Font import */
-@font-face {
-  font-family: 'Doganicapixel';
-  src: url('Font/dogicapixel.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 /* Base Styles */
 body {
@@ -15,7 +9,6 @@ body {
   min-height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
   background-color: #fff; /* Optional background color */
-  font-family: 'Doganicapixel';
   line-height: 1;
 }
 
@@ -37,7 +30,6 @@ select {
 h1 {
   color: #000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
   font-size: 3rem; /* Larger font size for PC */
   margin: 0.5em 0;
   padding: 10px;
@@ -102,7 +94,6 @@ nav {
   background-color: #f0f0f0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-spacing: 1em;
-  font-family: 'Doganicapixel';
   font-size: 1.25rem; /* Larger for PC */
 }
 
@@ -120,7 +111,6 @@ footer {
 li {
   line-height: 1.5;
   font-size: 1.5rem; /* Larger for PC */
-  font-family: 'Doganicapixel';
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #000;
 }
@@ -128,7 +118,6 @@ li {
 input {
   line-height: 1.5;
   font-size: 1.5rem; /* Larger for PC */
-  font-family: 'Doganicapixel';
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #000;
   border: 2px solid #000;
