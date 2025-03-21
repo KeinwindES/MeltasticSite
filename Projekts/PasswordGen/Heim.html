@@ -19,9 +19,9 @@
 
     <script>
         document.querySelector('#generateButton').addEventListener('click', function() {
-            const length = document.getElementById('length').value;
-            const password = generatePassword(length);
-            document.getElementById('password').value = password;
+            let length = parseInt(document.getElementById('length').value);
+            length = Math.min(Math.max(length, 4), 20); // Ensure length is within range
+            document.getElementById('password').value = generatePassword(length);
         });
 
         function generatePassword(length) {
@@ -29,16 +29,14 @@
             let password = '';
 
             for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * characters.length);
-                password += characters.charAt(randomIndex);
+                password += characters.charAt(Math.floor(Math.random() * characters.length));
             }
 
             return password;
         }
     </script>
 
-    <footer>
-
+    <footer style="margin-top: 20px;">
         <h6>&copy; 2024 Meltastic</h6>
     </footer>
 </body>

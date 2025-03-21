@@ -16,6 +16,7 @@ body {
   margin: 0; /* Remove default margin */
   background-color: #fff; /* Optional background color */
   font-family: 'Doganicapixel';
+  line-height: 1;
 }
 
 select {
@@ -130,7 +131,8 @@ input {
   font-family: 'Doganicapixel';
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   color: #000;
-  border-radius: 5px;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
 
 
