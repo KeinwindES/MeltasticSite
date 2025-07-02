@@ -1,104 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style.css">
-    <title>Taschen</title>
-</head>
-<body>
-    <a href="../Heim.html">Zurück</a>
-    <h1>Taschenrechner</h1>
-    <div>
-            <input type="text" id="display" disabled>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../style.css" />
+        <title>Taschen</title>
+    </head>
+    <body>
+        <a href="../Heim.html">Zurück</a>
+        <h1>Taschenrechner</h1>
+        <div>
+            <input type="text" id="display" disabled />
+        </div>
+        <div>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+        </div>
+        <div>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+        </div>
+        <div>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>=</button>
+        </div>
+        <div>
+            <button>0</button>
+            <button>,</button>
+            <button>C</button>
+            <button>DEL</button>
+        </div>
+        <script>
+            // JavaScript to handle button clicks
+            const display = document.getElementById("display");
+            let currentInput = "";
+            let operator = null;
+            let firstOperand = null;
 
+            // Function to handle button click
+            document.body.addEventListener("click", (event) => {
+                if (event.target.tagName !== "BUTTON") return;
 
-    </div>
-    <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
-    </div>
-    <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-    </div>
-    <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>=</button>
-    </div>
-    <div>
-        <button>0</button>
-        <button>,</button>
-        <button>C</button>
-        <button>DEL</button>
+                const value = event.target.textContent;
 
-    </div>
-    <script>
-    // JavaScript to handle button clicks
-    const display = document.getElementById('display');
-    let currentInput = '';
-    let operator = null;
-    let firstOperand = null;
-
-    // Function to handle button click
-    document.body.addEventListener('click', (event) => {
-        if (event.target.tagName !== 'BUTTON') return;
-
-        const value = event.target.textContent;
-
-        if (!isNaN(value)) {
-            // Number buttons
-            currentInput += value;
-            display.value = currentInput;
-        } else if (value === '+' || value === '-') {
-            // Operator buttons
-            if (currentInput) {
-                firstOperand = parseFloat(currentInput);
-                currentInput = '';
-                operator = value;
-            }
-        } else if (value === '=') {
-            // Equals button
-            if (firstOperand !== null && operator && currentInput) {
-                const secondOperand = parseFloat(currentInput);
-                let result;
-                if (operator === '+') {
-                    result = firstOperand + secondOperand;
-                } else if (operator === '-') {
-                    result = firstOperand - secondOperand;
+                if (!isNaN(value)) {
+                    // Number buttons
+                    currentInput += value;
+                    display.value = currentInput;
+                } else if (value === "+" || value === "-") {
+                    // Operator buttons
+                    if (currentInput) {
+                        firstOperand = parseFloat(currentInput);
+                        currentInput = "";
+                        operator = value;
+                    }
+                } else if (value === "=") {
+                    // Equals button
+                    if (firstOperand !== null && operator && currentInput) {
+                        const secondOperand = parseFloat(currentInput);
+                        let result;
+                        if (operator === "+") {
+                            result = firstOperand + secondOperand;
+                        } else if (operator === "-") {
+                            result = firstOperand - secondOperand;
+                        }
+                        display.value = parseFloat(result.toFixed(3)); // Round to 3 decimals
+                        firstOperand = null;
+                        currentInput = "";
+                        operator = null;
+                    }
+                } else if (value === "C") {
+                    // Clear button
+                    currentInput = "";
+                    operator = null;
+                    firstOperand = null;
+                    display.value = "";
+                } else if (value === ",") {
+                    // Decimal button
+                    if (!currentInput.includes(".")) {
+                        currentInput += ".";
+                        display.value = currentInput;
+                    }
+                } else if (value === "DEL") {
+                    // Delete button
+                    currentInput = currentInput.slice(0, -1);
+                    display.value = currentInput;
                 }
-                display.value = parseFloat(result.toFixed(3)); // Round to 3 decimals
-                firstOperand = null;
-                currentInput = '';
-                operator = null;
-            }
-        } else if (value === 'C') {
-            // Clear button
-            currentInput = '';
-            operator = null;
-            firstOperand = null;
-            display.value = '';
-        } else if (value === ',') {
-            // Decimal button
-            if (!currentInput.includes('.')) {
-                currentInput += '.';
-                display.value = currentInput;
-            }
-        } else if (value === 'DEL') {
-            // Delete button
-            currentInput = currentInput.slice(0, -1);
-            display.value = currentInput;
-        }
-    });
-    </script>
-    <footer>
-        <h6>&copy; 2025 Meltastic</h6>
-    </footer>
-</body>
+            });
+        </script>
+        <footer>
+            <h6>&copy; 2025 Meltastic</h6>
+        </footer>
+    </body>
 </html>

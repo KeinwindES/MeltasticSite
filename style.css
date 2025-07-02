@@ -1,225 +1,225 @@
-
-
 /* Base Styles */
 body {
-  display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  flex-direction: column; /* Ensures elements stack vertically */
-  min-height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
-  background-color: #fff; /* Optional background color */
-  line-height: 1;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Ensures elements stack vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #fff; /* Optional background color */
+    line-height: 1;
 }
 
 select {
-  font-family: 'Doganicapixel';
-  padding: 0.5em;
-  font-size: 1.5rem;
-  margin: 0.5em;
-  border: 2px solid #000;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #fff;
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    font-family: "Doganicapixel";
+    padding: 0.5em;
+    font-size: 1.5rem;
+    margin: 0.5em;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 h1 {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 3rem; /* Larger font size for PC */
-  margin: 0.5em 0;
-  padding: 10px;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3rem; /* Larger font size for PC */
+    margin: 0.5em 0;
+    padding: 10px;
 }
 
 h2 {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
-  font-size: 2rem;
-  padding: 10px;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Doganicapixel";
+    font-size: 2rem;
+    padding: 10px;
 }
 
 h6 {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
-  font-size: 1rem; /* Adjusted for readability */
-  margin: auto;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Doganicapixel";
+    font-size: 1rem; /* Adjusted for readability */
+    margin: auto;
 }
 
 p {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem; /* Larger for PC */
-  font-family: 'Doganicapixel';
-  line-height: 1.5;
-  padding: 10px;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem; /* Larger for PC */
+    font-family: "Doganicapixel";
+    line-height: 1.5;
+    padding: 10px;
 }
 
 a {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Doganicapixel';
-  text-decoration: none;
-  font-size: 1.5rem; /* Larger for PC */
-  transition: color 0.3s ease;
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Doganicapixel";
+    text-decoration: none;
+    font-size: 1.5rem; /* Larger for PC */
+    transition: color 0.3s ease;
 }
 
 /* list on hover */
 button {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 0.6em; /* Adjusted for better spacing */
-  margin: 0.5em;
-  background-color: #f0f0f0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  word-spacing: 1em;
-  font-family: 'Doganicapixel';
-  font-size: 1.25rem; /* Larger for PC */
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0.6em; /* Adjusted for better spacing */
+    margin: 0.5em;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    word-spacing: 1em;
+    font-family: "Doganicapixel";
+    font-size: 1.25rem; /* Larger for PC */
 }
 
 nav {
-  color: #000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  border: 2px solid #000;
-  border-radius: 5px;
-  padding: 0.6em; /* Adjusted for better spacing */
-  margin: 0.5em;
-  background-color: #f0f0f0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  word-spacing: 1em;
-  font-size: 1.25rem; /* Larger for PC */
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0.6em; /* Adjusted for better spacing */
+    margin: 0.5em;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    word-spacing: 1em;
+    font-size: 1.25rem; /* Larger for PC */
 }
 
 footer {
-  color: #333;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  padding: 0.5em 1em; /* Adjusted for layout */
-  margin: 0;
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  font-size: 1rem;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 0.5em 1em; /* Adjusted for layout */
+    margin: 0;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    font-size: 1rem;
 }
 
 li {
-  line-height: 1.5;
-  font-size: 1.5rem; /* Larger for PC */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #000;
+    line-height: 1.5;
+    font-size: 1.5rem; /* Larger for PC */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #000;
 }
 
 input {
-  line-height: 1.5;
-  font-size: 1.5rem; /* Larger for PC */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: #000;
-  border: 2px solid #000;
-  border-radius: 10px;
+    line-height: 1.5;
+    font-size: 1.5rem; /* Larger for PC */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
 }
-
-
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+    h1 {
+        font-size: 2.5rem;
+    }
 
-  h2 {
-    font-size: 1.75rem;
-  }
+    h2 {
+        font-size: 1.75rem;
+    }
 
-  p, li {
-    font-size: 1.25rem;
-  }
+    p,
+    li {
+        font-size: 1.25rem;
+    }
 
-  button {
-    font-size: 1.2rem;
-    padding: 0.5em 1em;
-  }
+    button {
+        font-size: 1.2rem;
+        padding: 0.5em 1em;
+    }
 
-  nav {
-    font-size: 1.125rem;
-    padding: 0.5em;
-  }
+    nav {
+        font-size: 1.125rem;
+        padding: 0.5em;
+    }
 }
 
 @media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1em;
-  }
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1em;
+    }
 
-  h1 {
-    font-size: 2rem;
-  }
+    h1 {
+        font-size: 2rem;
+    }
 
-  h2 {
-    font-size: 1.5rem;
-  }
+    h2 {
+        font-size: 1.5rem;
+    }
 
-  p, li {
-    font-size: 1.1rem;
-  }
+    p,
+    li {
+        font-size: 1.1rem;
+    }
 
-  button {
-    font-size: 1.1rem;
-    padding: 0.4em 0.8em;
-  }
+    button {
+        font-size: 1.1rem;
+        padding: 0.4em 0.8em;
+    }
 
-  nav {
-    font-size: 1rem;
-    padding: 0.4em;
-  }
+    nav {
+        font-size: 1rem;
+        padding: 0.4em;
+    }
 
-  footer {
-    font-size: 0.9rem;
-    padding: 0.3em;
-  }
+    footer {
+        font-size: 0.9rem;
+        padding: 0.3em;
+    }
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 0 0.5em;
-  }
+    body {
+        padding: 0 0.5em;
+    }
 
-  h1 {
-    font-size: 1.5rem;
-  }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-  h2 {
-    font-size: 1.25rem;
-  }
+    h2 {
+        font-size: 1.25rem;
+    }
 
-  p, li {
-    font-size: 1rem;
-  }
+    p,
+    li {
+        font-size: 1rem;
+    }
 
-  button {
-    font-size: 1rem;
-    padding: 0.3em 0.6em;
-  }
+    button {
+        font-size: 1rem;
+        padding: 0.3em 0.6em;
+    }
 
-  nav {
-    font-size: 0.9rem;
-    padding: 0.3em;
-  }
+    nav {
+        font-size: 0.9rem;
+        padding: 0.3em;
+    }
 
-  footer {
-    font-size: 0.8rem;
-    padding: 0.3em;
-  }
+    footer {
+        font-size: 0.8rem;
+        padding: 0.3em;
+    }
 
-  select, input {
-    font-size: 1.2rem;
-    padding: 0.5em;
-  }
+    select,
+    input {
+        font-size: 1.2rem;
+        padding: 0.5em;
+    }
 }
