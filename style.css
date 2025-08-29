@@ -91,7 +91,6 @@ nav {
     margin: 0.5em;
     background-color: #f0f0f0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    word-spacing: 1em;
     font-size: 1.25rem; /* Larger for PC */
 }
 
