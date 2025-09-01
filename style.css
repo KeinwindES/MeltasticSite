@@ -117,19 +117,7 @@ nav {
     font-size: 1.25rem; /* Larger for PC */
 }
 
-header{
-    grid-area: top;
-    color: #000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 0.6em; /* Adjusted for better spacing */
-    margin: 0.5em;
-    background-color: #f0f0f0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel";
-    font-size: 1.25rem; /* Larger for PC */
-}
+
 
 footer {
     font-family: "Doganicapixel";
