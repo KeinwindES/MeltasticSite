@@ -25,11 +25,15 @@ body {
     padding: 0.5em;
     font-family: "Doganicapixel", monospace;
     margin: 0.5em;
-    width: auto; /* Make the dropdown menu a bit wider */
+    width: 10em; /* Make the dropdown menu a bit wider */
     height: 2em; /* Make the dropdown menu a bit taller */
-    font-size: 1.5rem; /* Larger for PC */
+    font-size: auto; /* Larger for PC */
     position: absolute;
     right: 1em;
+    width: auto; /* Set width to 10px */
+    height: auto; /* Set height to auto */
+    overflow: hidden; /* Add this to prevent text from clipping */
+
 }
 
 .container {
@@ -49,6 +53,7 @@ body {
     border: 2px solid black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    
 }
 
 .center-box {
@@ -77,6 +82,9 @@ select {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 10px; /* Set width to 10px */
+    height: auto; /* Set height to auto */
+    overflow: hidden; /* Add this to prevent text from clipping */
 }
 
 h1 {
