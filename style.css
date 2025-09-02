@@ -1,9 +1,9 @@
 /* Font Face Declaration */
-@font-face {
+/* @font-face {
     font-family: "Doganicapixel";
     src: url("Font/dogicapixel.ttf") format("truetype");
     font-display: swap;
-}
+} */
 
 /* Base Styles */
 body {
@@ -15,15 +15,14 @@ body {
     margin: 0; /* Remove default margin */
     background-color: #fff; /* Optional background color */
     line-height: 1;
-    font-family: "Doganicapixel", monospace;
-}
+/*     font-family: "Doganicapixel", monospace;
+ */}
 #language-select {
     /* Make the dropdown menu fit with the rest of the design */
     background-color: gray;
     border: 2px solid black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 0.5em;
-    font-family: "Doganicapixel", monospace;
     margin: 0.5em;
     width: 10em; /* Make the dropdown menu a bit wider */
     height: 2em; /* Make the dropdown menu a bit taller */
@@ -70,7 +69,6 @@ body {
 }
 
 select {
-    font-family: "Doganicapixel";
     padding: 0.5em;
     font-size: 1.5rem;
     margin: 0.5em;
@@ -93,14 +91,12 @@ h1 {
     font-size: 3rem; /* Larger font size for PC */
     margin: 0.1em 0;
     padding: 10px;
-    font-family: "Doganicapixel";
     text-align: center;
 }
 
 h2 {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel";
     font-size: 2rem;
     padding: 10px;
 }
@@ -108,7 +104,6 @@ h2 {
 h6 {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel";
     font-size: 1rem; /* Adjusted for readability */
     margin: auto;
 }
@@ -117,7 +112,6 @@ p {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem; /* Larger for PC */
-    font-family: "Doganicapixel";
     line-height: 1.5;
     padding: 10px;
 }
@@ -125,7 +119,6 @@ p {
 a {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel";
     text-decoration: none;
     font-size: 1.5rem; /* Larger for PC */
     transition: color 0.3s ease;
@@ -141,7 +134,6 @@ button {
     margin: 0.5em;
     background-color: gray;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel", monospace;
     font-size: 1.25rem; /* Larger for PC */
     letter-spacing: normal;
     word-spacing: normal;
@@ -168,7 +160,6 @@ nav {
     margin: 0.5em;
     background-color: #f0f0f0;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel";
     font-size: 1.25rem; /* Larger for PC */
     width: auto;
     height: auto;
@@ -176,7 +167,6 @@ nav {
 }
 
 footer {
-    font-family: "Doganicapixel";
     grid-area: bottom;
     color: #333;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -192,7 +182,6 @@ li {
     font-size: 1.5rem; /* Larger for PC */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #000;
-    font-family: "Doganicapixel";
 }
 
 input {
@@ -204,7 +193,6 @@ input {
     border-radius: 10px;
     padding: 0.5em;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: "Doganicapixel";
 }
 
 /* Media Queries for Responsiveness */
