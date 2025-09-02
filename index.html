@@ -30,5 +30,19 @@
         <div class="center-box">
             <h1 style="text-align: center">Willkommen bei Meltastic</h1>
         </div>
+<script>
+    document
+        .getElementById("language-select")
+        .addEventListener("change", function () {
+            var selectedLanguage = this.value;
+            if (selectedLanguage === "de") {
+                window.location.href = "index.html";
+            } else if (selectedLanguage === "no") {
+                window.location.href = "No.html";
+            } else if (selectedLanguage === "en") {
+                window.location.href = "En.html";
+            }
+        });
+</script>
     </body>
 </html>
