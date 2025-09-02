@@ -25,7 +25,7 @@ body {
     padding: 0.5em;
     font-family: "Doganicapixel", monospace;
     margin: 0.5em;
-    width: 10em; /* Make the dropdown menu a bit wider */
+    width: auto; /* Make the dropdown menu a bit wider */
     height: 2em; /* Make the dropdown menu a bit taller */
     font-size: 1.5rem; /* Larger for PC */
     position: absolute;
@@ -162,7 +162,7 @@ nav {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Doganicapixel";
     font-size: 1.25rem; /* Larger for PC */
-    width: auto%;
+    width: auto;
     height: auto;
     margin: 0 auto;
 }
