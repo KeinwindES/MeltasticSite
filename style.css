@@ -39,33 +39,31 @@ body {
   height: 100vh;
 }
 .top-box {
+    margin-top: 20px; /* increase the margin-top to lower the box */
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  height: 5%;
+  height: 7%;
   background-color: gray;
   border: 2px solid black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 1em;
+    border-radius: 10px;
+
 }
 
 .center-box {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 87%;
+  height: 85%;
   background-color: gray;
   border: 2px solid black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-
+  border-radius: 10px;
 }
 
   select {
@@ -87,7 +85,7 @@ h1 {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 3rem; /* Larger font size for PC */
-    margin: 0.5em 0;
+    margin: 0.1em 0;
     padding: 10px;
     font-family: "Doganicapixel";
     text-align: center;
@@ -135,7 +133,7 @@ button {
     border-radius: 5px;
     padding: 0.6em; /* Adjusted for better spacing */
     margin: 0.5em;
-    background-color: #f0f0f0;
+    background-color: gray;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: "Doganicapixel", monospace;
     font-size: 1.25rem; /* Larger for PC */
