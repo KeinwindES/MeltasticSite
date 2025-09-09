@@ -15,8 +15,9 @@ body {
     margin: 0; /* Remove default margin */
     background-color: #fff; /* Optional background color */
     line-height: 1;
-/*     font-family: "Doganicapixel", monospace;
- */}
+    /*     font-family: "Doganicapixel", monospace;
+ */
+}
 #language-select {
     /* Make the dropdown menu fit with the rest of the design */
     background-color: gray;
@@ -32,7 +33,14 @@ body {
     width: auto; /* Set width to 10px */
     height: auto; /* Set height to auto */
     overflow: hidden; /* Add this to prevent text from clipping */
-
+}
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    width: 75%;
+    height: 1px;
+    overflow: hidden;
 }
 .hidden {
     display: none;
@@ -56,7 +64,6 @@ body {
     border: 2px solid black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    
 }
 
 .center-box {
@@ -71,7 +78,6 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-
 
 select {
     padding: 0.5em;
