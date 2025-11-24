@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="Img/Logo2V.png" />
+        <title>Heim</title>
+    </head>
+    <body>
+        <div class="top-box">
+            <select id="language-select">
+                <option value="de">De - Deutsch</option>
+                <option value="no">No - Norsk</option>
+                <option value="en">En - English</option>
+            </select>
+
+            <button><a href="De/Links.html">Links</a></button>
+            <button><a href="De/Projekts/Heim.html">Projekte</a></button>
+            <button><a href="De/Spiel/Heim.html">Spiel</a></button>
+            <button>
+                <a href="De/ÜberMeltastic/Heim.html">Über Meltastic</a>
+            </button>
+        </div>
+        <div class="center-box">
+            <h1 style="text-align: center">Willkommen bei Meltastic</h1>
+            <!-- Footer inside the body -->
+            <h2>Hier finden Sie Neuigkeiten</h2>
+            <div class="hidden">
+                <p>H̵̛̯̍Ĩ̸̲̳̗́́L̷̨̺̏̂̀F̶̘̠͖̄̊Ĕ̵̗̬̀</p>
+            </div>
+            <footer>
+                <p>&copy; 2025 Meltastic</p>
+            </footer>
+            <hr />
+        </div>
+        <script>
+            document
+                .getElementById("language-select")
+                .addEventListener("change", function () {
+                    var selectedLanguage = this.value;
+                    if (selectedLanguage === "de") {
+                        window.location.href = "index.html";
+                    } else if (selectedLanguage === "no") {
+                        window.location.href = "No.html";
+                    } else if (selectedLanguage === "en") {
+                        window.location.href = "En.html";
+                    }
+                });
+        </script>
+    </body>
+</html>

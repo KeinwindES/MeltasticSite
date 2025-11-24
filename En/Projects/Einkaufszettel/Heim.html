@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Einkaufszettel</title>
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="icon" type="image/x-icon" href="../../../Img/Logo2V.png" />
+    </head>
+    <body>
+        <a href="../heim.html">Zurück</a>
+        <h1>Einkaufszettel</h1>
+        <input
+            type="text"
+            id="item-input"
+            placeholder="Geben Sie einen Artikel ein"
+        />
+        <button id="add-button">hinzufügen</button>
+        <!-- label for the list -->
+        <ul id="list"></ul>
+
+        <script src="script.js"></script>
+        <style>
+            li:hover {
+                color: #000;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-family: "Doganicapixel";
+                text-decoration: line-through;
+                cursor: pointer;
+            }
+        </style>
+
+        <footer>
+            <h6>&copy; 2025 Meltastic</h6>
+        </footer>
+    </body>
+</html>

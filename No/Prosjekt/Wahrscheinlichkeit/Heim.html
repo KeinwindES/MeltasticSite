@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../style.css" />
+        <link rel="icon" type="image/x-icon" href="../../../Img/Logo2V.png" />
+        <title>Wahrscheinlichkeit</title>
+    </head>
+    <body>
+        <h1>Wahrscheinlichkeit</h1>
+
+        <label for="scenario">Wählen Sie ein Szenario:</label>
+        <select id="scenario">
+            <option value="planeCrash">Flugzeugabsturz</option>
+            <option value="appleCost">Apfelpreis</option>
+            <option value="randomNumber">randomNumber</option>
+        </select>
+
+        <div id="inputs">
+            <h2>Eingaben:</h2>
+            <!-- Dynamische Eingabefelder werden hier erscheinen -->
+        </div>
+
+        <button onclick="calculate()">Berechnen</button>
+
+        <h2>Ergebnisse:</h2>
+        <p id="result"></p>
+
+        <script src="Script.js"></script>
+
+        <footer>
+            <h6>&copy; 2025 Meltastic</h6>
+        </footer>
+    </body>
+</html>
