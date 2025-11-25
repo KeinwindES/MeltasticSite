@@ -23,16 +23,14 @@ body {
     background-color: gray;
     border: 2px solid black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 0.5em;
+    padding: 0.3em 0.5em;
     margin: 0.5em;
-    width: 10em; /* Make the dropdown menu a bit wider */
-    height: 2em; /* Make the dropdown menu a bit taller */
-    font-size: auto; /* Larger for PC */
+    font-size: 1rem;
     position: absolute;
     right: 1em;
-    width: auto; /* Set width to 10px */
-    height: auto; /* Set height to auto */
-    overflow: hidden; /* Add this to prevent text from clipping */
+    width: auto;
+    height: auto;
+    overflow: visible;
 }
 hr {
     border: none;
@@ -59,24 +57,28 @@ hr {
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    height: 7%;
+    min-height: 80px;
     background-color: gray;
     border: 2px solid black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .center-box {
     position: absolute;
-    top: 53%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 85%;
+    height: 80%;
     background-color: gray;
     border: 2px solid black;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    overflow-y: auto;
 }
 
 select {
@@ -86,22 +88,22 @@ select {
     border: 2px solid #000;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
+    background-color: gray;
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 10px; /* Set width to 10px */
-    height: auto; /* Set height to auto */
-    overflow: hidden; /* Add this to prevent text from clipping */
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
 
 h1 {
     color: #000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 3rem; /* Larger font size for PC */
-    margin: 0.1em 0;
-    padding: 10px;
+    margin: 0.2em;
+    padding: 5px 10px;
     text-align: center;
 }
 
@@ -132,7 +134,19 @@ a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     font-size: 1.5rem; /* Larger for PC */
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    padding: 0.3em 0.6em;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+a:active {
+    transform: scale(0.98);
 }
 
 /* list on hover */
@@ -162,20 +176,7 @@ button:active {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-nav {
-    color: #000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 0.6em; /* Adjusted for better spacing */
-    margin: 0.5em;
-    background-color: #f0f0f0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 1.25rem; /* Larger for PC */
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-}
+
 
 footer {
     grid-area: bottom;
