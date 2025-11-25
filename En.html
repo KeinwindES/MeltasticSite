@@ -24,9 +24,58 @@
             <h1>Welcome to Meltastic</h1>
             <footer>
                 <p>&copy; 2025 Meltastic</p>
+                <p>
+                    <a href="#" onclick="openModal('privacy')">Privacy Policy</a> | 
+                    <a href="#" onclick="openModal('terms')">Terms & Conditions</a>
+                </p>
             </footer>
         </div>
+
+        <!-- Privacy Policy Modal -->
+        <div id="privacyModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('privacy')">&times;</span>
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. We collect minimal data to improve your experience on Meltastic. Your data will never be shared with third parties without your consent.</p>
+                <p><strong>Cookies:</strong> We use cookies to remember your preferences.</p>
+                <p><strong>Google Ads:</strong> We use Google AdSense for advertisements. Google may use your data in accordance with their privacy policy.</p>
+            </div>
+        </div>
+
+        <!-- Terms & Conditions Modal -->
+        <div id="termsModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('terms')">&times;</span>
+                <h2>Terms & Conditions</h2>
+                <p>By using Meltastic, you agree to these terms and conditions.</p>
+                <p><strong>Content:</strong> All content on Meltastic is licensed under Creative Commons or similar, unless otherwise stated.</p>
+                <p><strong>Liability:</strong> We are not liable for any damages arising from the use of our website or tools.</p>
+                <p><strong>Changes:</strong> We reserve the right to modify these terms at any time.</p>
+            </div>
+        </div>
+
+        <style>
+        </style>
+
         <script>
+            function openModal(type) {
+                var modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
+                document.getElementById(modalId).style.display = 'block';
+            }
+            function closeModal(type) {
+                var modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
+                document.getElementById(modalId).style.display = 'none';
+            }
+            window.onclick = function(event) {
+                var privacyModal = document.getElementById('privacyModal');
+                var termsModal = document.getElementById('termsModal');
+                if (event.target === privacyModal) {
+                    privacyModal.style.display = 'none';
+                }
+                if (event.target === termsModal) {
+                    termsModal.style.display = 'none';
+                }
+            }
             document
                 .getElementById("language-select")
                 .addEventListener("change", function () {
