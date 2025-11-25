@@ -5,14 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
         <link rel="stylesheet" href="style.css" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8410397243495830"
-     crossorigin="anonymous"></script>
         <link rel="icon" type="image/x-icon" href="Img/Logo2V.png" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8410397243495830" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="top-box">
             <select id="language-select">
-                <option value="en">En - English</option>
+                <option value="en" selected>En - English</option>
                 <option value="no">No - Norsk</option>
                 <option value="de">De - Deutsch</option>
             </select>
@@ -54,38 +53,6 @@
             </div>
         </div>
 
-        <script>
-            function openModal(type) {
-                const modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
-                document.getElementById(modalId).style.display = 'block';
-            }
-
-            function closeModal(type) {
-                const modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
-                document.getElementById(modalId).style.display = 'none';
-            }
-
-            window.onclick = function (event) {
-                const privacyModal = document.getElementById('privacyModal');
-                const termsModal = document.getElementById('termsModal');
-                if (event.target === privacyModal) {
-                    privacyModal.style.display = 'none';
-                }
-                if (event.target === termsModal) {
-                    termsModal.style.display = 'none';
-                }
-            };
-
-            document.getElementById('language-select').addEventListener('change', function () {
-                const selectedLanguage = this.value;
-                if (selectedLanguage === 'de') {
-                    window.location.href = 'De.html';
-                } else if (selectedLanguage === 'no') {
-                    window.location.href = 'index.html';
-                } else if (selectedLanguage === 'en') {
-                    window.location.href = 'En.html';
-                }
-            });
-        </script>
+        <script src="scripts/ui.js" defer></script>
     </body>
 </html>
