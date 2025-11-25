@@ -58,35 +58,36 @@
 
         <script>
             function openModal(type) {
-                var modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
+                const modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
                 document.getElementById(modalId).style.display = 'block';
             }
+
             function closeModal(type) {
-                var modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
+                const modalId = type === 'privacy' ? 'privacyModal' : 'termsModal';
                 document.getElementById(modalId).style.display = 'none';
             }
-            window.onclick = function(event) {
-                var privacyModal = document.getElementById('privacyModal');
-                var termsModal = document.getElementById('termsModal');
+
+            window.onclick = function (event) {
+                const privacyModal = document.getElementById('privacyModal');
+                const termsModal = document.getElementById('termsModal');
                 if (event.target === privacyModal) {
                     privacyModal.style.display = 'none';
                 }
                 if (event.target === termsModal) {
                     termsModal.style.display = 'none';
                 }
-            }
-            document
-                .getElementById("language-select")
-                .addEventListener("change", function () {
-                    var selectedLanguage = this.value;
-                    if (selectedLanguage === "de") {
-                        window.location.href = "De.html";
-                    } else if (selectedLanguage === "no") {
-                        window.location.href = "index.html";
-                    } else if (selectedLanguage === "en") {
-                        window.location.href = "En.html";
-                    }
-                });
+            };
+
+            document.getElementById('language-select').addEventListener('change', function () {
+                const selectedLanguage = this.value;
+                if (selectedLanguage === 'de') {
+                    window.location.href = 'De.html';
+                } else if (selectedLanguage === 'no') {
+                    window.location.href = 'index.html';
+                } else if (selectedLanguage === 'en') {
+                    window.location.href = 'En.html';
+                }
+            });
         </script>
     </body>
 </html>
