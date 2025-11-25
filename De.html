@@ -15,12 +15,10 @@
                 <option value="en">En - English</option>
             </select>
 
-            <button><a href="De/Links.html">Links</a></button>
-            <button><a href="De/Projekts/Heim.html">Projekte</a></button>
-            <button><a href="De/Spiel/Heim.html">Spiel</a></button>
-            <button>
-                <a href="De/ÜberMeltastic/Heim.html">Über Meltastic</a>
-            </button>
+            <a class="nav-button" href="De/Links.html">Links</a>
+            <a class="nav-button" href="De/Projekts/Heim.html">Projekte</a>
+            <a class="nav-button" href="De/Spiel/Heim.html">Spiel</a>
+            <a class="nav-button" href="De/ÜberMeltastic/Heim.html">Über Meltastic</a>
         </div>
         <div class="center-box">
             <h1 style="text-align: center">Willkommen bei Meltastic</h1>
@@ -40,9 +38,9 @@
                 .addEventListener("change", function () {
                     var selectedLanguage = this.value;
                     if (selectedLanguage === "de") {
-                        window.location.href = "index.html";
+                        window.location.href = "De.html";
                     } else if (selectedLanguage === "no") {
-                        window.location.href = "No.html";
+                        window.location.href = "index.html";
                     } else if (selectedLanguage === "en") {
                         window.location.href = "En.html";
                     }

@@ -14,10 +14,8 @@
                 <option value="de">De - Deutsch</option>
             </select>
 
-            <button><a href="/En/Links.html">Links</a></button>
-            <button>
-                <a href="En/AboutMeltastic/Home.html">About Meltastic</a>
-            </button>
+            <a class="nav-button" href="En/Links.html">Links</a>
+            <a class="nav-button" href="En/AboutMeltastic/Home.html">About Meltastic</a>
         </div>
         <div class="center-box">
             <h1>Welcome to Meltastic</h1>
@@ -31,9 +29,9 @@
                 .addEventListener("change", function () {
                     var selectedLanguage = this.value;
                     if (selectedLanguage === "de") {
-                        window.location.href = "index.html";
+                        window.location.href = "De.html";
                     } else if (selectedLanguage === "no") {
-                        window.location.href = "No.html";
+                        window.location.href = "index.html";
                     } else if (selectedLanguage === "en") {
                         window.location.href = "En.html";
                     }
