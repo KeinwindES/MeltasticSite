@@ -39,3 +39,7 @@ yarn-error.log*
 *.tmp
 *.temp
 ~*
+
+# Temporary folders
+De/
+De.html
